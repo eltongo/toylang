@@ -276,6 +276,8 @@ class Scanner:
             self.current_string += '\t'
         elif self.match('"'):
             self.current_string += '"'
+        elif self.match("'"):
+            self.current_string += "'"
         elif self.match('\\'):
             self.current_string += '\\'
         else:
